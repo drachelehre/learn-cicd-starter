@@ -92,7 +92,7 @@ func main() {
 	srv := &http.Server{
 		Addr:              ":" + port,
 		Handler:           router,
-		ReadHeaderTimeout: 5 * time.Second, // Limit the time to read headers
+		ReadHeaderTimeout: 5 * time.Second,  // Limit the time to read headers
 		IdleTimeout:       60 * time.Second, // Limit idle connection time
 		WriteTimeout:      10 * time.Second, // Limit the time to write the response
 		ReadTimeout:       10 * time.Second, // Limit the time to read the request body
